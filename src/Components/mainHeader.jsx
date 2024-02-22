@@ -3,7 +3,7 @@ import logo from '../../public/Vector Smart Object.png'
 
 function MainHeader() {
   return (
-    <div style={{ zIndex: 10, position: 'absolute' }} className='w-full'>
+    <div style={{ zIndex: 7, position: 'absolute' }} className='w-full'>
     <div className='flex justify-evenly  items-center'>
       <img src={logo} alt="Logo" className='w-9 h-9 mt-2'/>
  
