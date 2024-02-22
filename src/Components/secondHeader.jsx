@@ -2,11 +2,11 @@ import React from 'react'
 import logo from '../../public/Vector Smart Object.png'
 function SecondHeader() {
   return (
-    <div style={{ zIndex: 10, position: 'absolute' }} className='w-full '>
+    <div style={{ zIndex: 10, position: 'absolute' }} className='w-full mt-3 lg:mt-0'>
     <div className='flex justify-evenly  items-center'>
         <div className='flex'>
-      <img src={logo} alt="Logo" className='w-9 h-9 mt-2'/>
-      <h1  className='h-full font-sans  flex flex-col ml-3 mt-2  ' style={{fontWeight:600}}>
+      <img src={logo} alt="Logo" className='w-6 h-6 md:w-9 md:h-9 mt-2'/>
+      <h1  className='h-full font-sans text-xs md:text- flex flex-col ml-3 mt-2  ' style={{fontWeight:600}}>
          <span className='text-gray-800 ' >
         LOSANGELES
       </span>
@@ -22,7 +22,7 @@ function SecondHeader() {
       </span>
       </h1>
       </div>
-      <div className='flex underline underline-offset-8  italic opacity-75 font-semibold'>
+      <div className='flex underline underline-offset-8 text-sm lg:text-base  italic opacity-75 font-semibold'>
         <h1>0.1 History</h1>
         <h1 className='ml-8'>0.2 Team</h1>
       </div>

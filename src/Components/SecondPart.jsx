@@ -4,7 +4,7 @@ import Carosel from "./Carosel";
 
 function SecondPart() {
   return (
-    <div className="w-full mt-16" style={{ position: "relative" }}>
+    <div className="w-full mt-16 relative">
       <img src={image} alt="" className="w-full h-full" />
       <div
         style={{
@@ -19,25 +19,29 @@ function SecondPart() {
         }}
       ></div>
       <h1
-        className="text-8xl font-bold opacity-50 tracking-tightest"
-        style={{ position: "absolute", zIndex: 4, top: 50, left: 300 }}
+        className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold opacity-50 tracking-tightest absolute top-5 md:top-16 lg:top-20 left-5 md:left-20"
+        style={{ zIndex: 4 }}
       >
         01.
       </h1>
       <h1
-        className="text-3xl font-bold text-indigo-950 tracking-tightest "
-        style={{ position: "absolute", zIndex: 4, top: 90, left: 400 }}
+        className="text-lg md:text-xl lg:text-3xl font-bold text-indigo-950 tracking-tightest absolute ml-2 sm:ml-0 top-6 md:top-20 lg:top-28 left-16 sm:left-20 md:left-40 lg:left-48"
+        style={{ zIndex: 4 }}
       >
         HISTORY
       </h1>
-      <p style={{ position: "absolute", zIndex: 4, top: 140, left: 350 }} className="text-sm">
+      <p
+        style={{ zIndex: 4 }}
+        className="text-sm absolute top-16 md:top-32 lg:top-48 left-5 flex justify-center md:left-20 w-5/6 lg:w-3/5 mx-auto text-center"
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante
-        viverra, rutrum erat rutrum, consectetur mi. Proin at <br/>maximus est.
+        viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est.
         Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras
-        scelerisque id quam sed dignissim <br/> Pellentesque urna nunc, gravida quis
+        scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis
         hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec
-        congue.{" "}
+        congue.
       </p>
+
       <Carosel />
     </div>
   );
