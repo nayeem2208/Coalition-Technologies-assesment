@@ -1,5 +1,7 @@
 import React from 'react'
 import logo from '../../public/Vector Smart Object.png'
+import { Link as ScrollLink } from 'react-scroll';
+
 function SecondHeader() {
   return (
     <div style={{ zIndex: 10, position: 'absolute' }} className='w-full mt-3 lg:mt-0'>
@@ -23,8 +25,8 @@ function SecondHeader() {
       </h1>
       </div>
       <div className='flex underline underline-offset-8 text-sm lg:text-base  italic opacity-75 font-semibold'>
-        <h1>0.1 History</h1>
-        <h1 className='ml-8'>0.2 Team</h1>
+      <ScrollLink to='secondHeader' spy={true} smooth={true} duration={500} offset={-50}>0.1 History</ScrollLink>
+      <ScrollLink to='thirdPart' spy={true} smooth={true} duration={500} offset={-50}className='ml-8'>0.2 Team</ScrollLink>
       </div>
     </div>
   </div>
